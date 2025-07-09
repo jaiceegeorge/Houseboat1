@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://images.pexels.com/photos/28700142/pexels-photo-28700142.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #004d40;
+  margin-bottom: 2rem;
+}
+
+.reservation-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.reservation-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #004d40;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Cinzel', serif;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00695c;
+}
+
+/* Stylish popup */
+.popup-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  animation: slideDownFade 0.5s ease forwards;
+  text-align: center;
+}
+
+.popup-message.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.popup-message.error {
+  background-color: #f44336;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+}

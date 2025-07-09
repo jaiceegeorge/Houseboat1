@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kerala Houseboat Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="nmenu.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>Feast on a Floating Paradise</h1>
+      <p>Authentic Kerala cuisine on board – freshly made, served with love.</p>
+      <a href="#book-food" class="book-button">Order Food</a>
+    </div>
+  </header>
+
+  <section class="menu-table" data-aos="fade-up" data-aos-duration="1000">
+    <h2>Meal Plan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Meal</th>
+          <th>Non-Vegetarian Options</th>
+          <th>Vegetarian Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Breakfast</td>
+          <td>Tea/Coffee, Bread & Jam, Omelette, Idly, Dosa, Poori Masala, Appam & Egg Roast, Puttu & Kadala Curry</td>
+          <td>Tea/Coffee, Bread & Jam, Idly, Dosa, Poori Masala, Appam & Veg Curry, Puttu & Kadala Curry</td>
+        </tr>
+        <tr>
+          <td>Lunch</td>
+          <td>Fried Rice Non Veg, Chicken Biryani, Mutton Biryani, Fish Biryani, Beef Biryani, Kerala Non Veg Meals</td>
+          <td>Veg Fried Rice, Kerala Meals</td>
+        </tr>
+        <tr>
+          <td>Evening</td>
+          <td>Tea/Coffee with Banana Fritters</td>
+          <td>Tea/Coffee with Banana Fritters</td>
+        </tr>
+        <tr>
+          <td>Dinner</td>
+          <td>Chapathi, Chicken Fry, Fish Curry, Dal, Vendakka Mezhukupurathy, Salad</td>
+          <td>Chapathi, Aloo Matter, Gobi, Cabbage Thoran, Dal, Salad</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="food-cards-container" id="food-cards-section" data-aos="zoom-in-up" data-aos-duration="1200">
+    <h2>Our Dishes</h2>
+    <div id="food-cards" class="cards-grid"></div>
+  </section>
+
+  <section class="booking-form" id="book-food" data-aos="fade-up" data-aos-duration="1200">
+    <h2>Food Order Form</h2>
+    <form id="food-order-form">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="address" placeholder="Address" required></textarea><br>
+      <input type="date" name="date" required><br>
+
+      <label>Select Items:</label><br>
+      <div id="item-select-container" class="scroll-box"></div>
+
+      <div id="bill-summary"></div>
+
+      <p><strong>Grand Total: ₹<span id="grand-total">0</span></strong></p>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Kerala Houseboat Experience</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="nmenu.js"></script>
+</body>
+</html>
